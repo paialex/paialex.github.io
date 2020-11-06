@@ -1,0 +1,161 @@
+details, summary, ul, li {
+    display: block;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:seashell;
+    margin: 0;
+    padding: 2% 5%
+}
+
+.details_test-suit {
+    border-radius: 5px;
+    padding: .5em .5em 0;
+    margin-bottom: .2em;
+    background-color: darkgrey;
+}
+
+.details_test-suit > summary {
+    font-size: 1.5em;
+    margin: -.5em -.5em 0;
+    padding: 0.8em;
+    cursor: pointer;
+}
+
+.details_test-suit > .details_test {
+    margin: 10px 0;
+} 
+
+.details_test-suit > .details_test > summary{
+    border-radius: 5px;
+    padding: .5em;
+} 
+
+.details_info {
+    border: 3px solid;
+    border-top: none;
+    border-radius:  0 0 5px 5px;
+    padding: .5em;
+    background-color:seashell;
+}
+
+.test_pass+.details_info {
+    border-color: forestgreen;
+}
+
+.test_fail+.details_info {
+    border-color: tomato;
+}
+
+.test_pass {
+    background-color: forestgreen;
+}
+
+.test_fail {
+    background-color:tomato;
+}
+
+.info h1 {
+    text-align: center;
+    color: olive;
+
+}
+
+.info ul {
+    display: flex;
+}
+.info ul > li {
+    margin: 5px;
+}
+
+.container {
+    display: grid;
+}
+
+div.hide {
+    display: none;
+}
+
+.result_pass {
+    color: forestgreen;
+    font-weight: bold;
+}
+.result_fail {
+    color: tomato;
+    font-weight: bold;
+}
+.result_extime {
+    color: gold;
+    font-weight: bold;
+}
+.result_missing-content {
+    color: peru;
+    font-weight: bold;
+}
+.result_total {
+    color: navy;
+    font-weight: bold;
+}
+
+.permissions {
+    display: flex;
+}
+.permissions > div {
+    margin: 0 5px;
+}
+
+.container-missing-paths {
+    
+    display: flex;
+    
+    width: 80%;
+    border-radius: 5px;
+    align-self: center;
+    margin: auto;
+    margin-top: 10%;
+    background-color: darkturquoise;
+   
+}
+
+.container-missing-paths>details {
+    /* background-color:yellow; */
+    /* margin: auto; */
+    width: 100%;
+    background-color: transparent;
+}
+
+.container-missing-paths>details[open] {
+    width: 100%;
+    background-color: whitesmoke;
+    border-bottom: 5px;
+}
+
+.container-missing-paths>details>summary {
+    padding: 10px;
+}
+
+.container-missing-paths>details[open] >summary {
+    border-bottom: 1px solid dimgray;
+}
+.container-missing-paths>details[open] >div {
+    padding: 10px;
+    border-bottom: 1px solid dimgray;
+    color: gray;
+    font-style: italic;
+}
+
+
+
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Test Groups Accesses</title>
+</head>
+<body>
+    <div class="info">
+        <h1>AEM usergroups accesses tests</h1>
+        <ul class="main-info">
+            <li class="result_total">Total tests: ${totalPassed + totalFailed}</li>
+            <li class="result_pass">PASS: ${totalPassed}</li>
+            <li class="result_fail">FAIL: ${totalFailed}</li>
+            <li class="result_extime">Execution time: ${executionTime}</li>
+            <li class="result_missing-content">Missing content paths: ${missingContent}</li>
+        </ul>
+    </div>
+    <div class="container">
+        <details class="details_test-suit">
+            <summary>${it.group}</summary>
+            <details class="details_test" >
+                <summary class=${it.result ? 'test_pass' : 'test_fail'}>${it.summary}</summary>
+                <div class="details_info">
+                    <div><strong>path:</strong> ${it.path}</div>
+                    <div><strong>info:</strong> ${it.info}</div>
+                    <div class=${it.permissions.size() > 0 ? 'permissions' : 'hide'}><strong>permissions:</strong> ${privelegesConverter(it.privileges)}</div>
+                    <div class=${it.result ? 'result_pass' : 'result_fail'}><strong>Test result:</strong> ${it.result ? 'PASS' : 'FAIL'}</div>
+                </div>
+            </details>
+        </details>
+    </div>
+    <div class="container-missing-paths ${missingContent > 0 ? '' : 'hide'}">
+        <details>
+            <summary>Here is the list of missing paths</summary>
+            <div>${path}</div>
+        </details>
+    </div>
+</body>
+</html>
