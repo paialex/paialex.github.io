@@ -11,11 +11,11 @@
     <div class="info">
         <h1>AEM usergroups accesses tests</h1>
         <ul class="main-info">
-            <li class="result_total">Total tests: 191</li>
-            <li class="result_pass">PASS: 191</li>
-            <li class="result_fail">FAIL: 0</li>
-            <li class="result_extime">Execution time: 3966ms</li>
-            <li class="result_missing-content">Missing content paths: 10</li>
+            <li class="result_total">Total tests: 179</li>
+            <li class="result_pass">PASS: 175</li>
+            <li class="result_fail">FAIL: 4</li>
+            <li class="result_extime">Execution time: 348ms</li>
+            <li class="result_missing-content">Missing content paths: 9</li>
         </ul>
     </div>
     <div class="container"><details class="details_test-suit">
@@ -140,11 +140,11 @@
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_pass>Has access to Tools Workflow</summary>
+                <summary class=test_pass>Has no access to Tools Workflow</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /libs/cq/core/content/nav/tools/workflow</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div></div>
+                    <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
+                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div></div>
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
@@ -375,7 +375,7 @@
                 <summary class=test_pass>Has no access on /content/dam/bni</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /content/dam/bni</div>
-                    <div><strong>info:</strong> Path <strong>/content/dam/bni</strong> does not exists.</div>
+                    <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
                     <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div></div>
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
@@ -417,54 +417,6 @@
                     <div><strong>path:</strong> /conf/global/settings/workflow/models</div>
                     <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
                     <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
-                </div>
-            </details><details class="details_test" >
-                <summary class=test_pass>Workflow option is visible in Tools</summary>
-                <div class="details_info">
-                    <div><strong>path:</strong> /libs/cq/core/content/nav/tools/workflow</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
-                </div>
-            </details><details class="details_test" >
-                <summary class=test_pass>Workflow widget is visible.</summary>
-                <div class="details_info">
-                    <div><strong>path:</strong> /libs/cq/core/content/nav/tools/workflow/models</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
-                </div>
-            </details><details class="details_test" >
-                <summary class=test_pass>Instances widget in WF is not visible.</summary>
-                <div class="details_info">
-                    <div><strong>path:</strong> /libs/cq/core/content/nav/tools/workflow/instances</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
-                </div>
-            </details><details class="details_test" >
-                <summary class=test_pass>Launchers widget in WF is not visible.</summary>
-                <div class="details_info">
-                    <div><strong>path:</strong> /libs/cq/core/content/nav/tools/workflow/launchers</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
-                </div>
-            </details><details class="details_test" >
-                <summary class=test_pass>Archive widget in WF is not visible.</summary>
-                <div class="details_info">
-                    <div><strong>path:</strong> /libs/cq/core/content/nav/tools/workflow/archive</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
-                </div>
-            </details><details class="details_test" >
-                <summary class=test_pass>Failures widget in WF is not visible.</summary>
-                <div class="details_info">
-                    <div><strong>path:</strong> /libs/cq/core/content/nav/tools/workflow/failures</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div></div>
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
@@ -524,35 +476,35 @@
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_pass>Has read/modify on /content/fbngp</summary>
+                <summary class=test_pass>Has read on /content/fbngp</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /content/fbngp</div>
                     <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div><div class=result_pass>modify</div></div>
+                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div></div>
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_pass>Has create/remove on /content/fbngp</summary>
-                <div class="details_info">
-                    <div><strong>path:</strong> /content/fbngp/testcontent</div>
-                    <div><strong>info:</strong> Path <strong>/content/fbngp/testcontent</strong> does not exists.</div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>create</div><div class=result_pass>remove</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
-                </div>
-            </details><details class="details_test" >
-                <summary class=test_pass>Can replicate on /content/fbngp</summary>
+                <summary class=test_pass>Cannot modify on  /content/fbngp</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /content/fbngp</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>replicate</div></div>
+                    <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
+                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>modify</div></div>
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_pass>Can create/remove content inside /content/fbngp</summary>
+                <summary class=test_pass>Cannot replicate on /content/fbngp</summary>
+                <div class="details_info">
+                    <div><strong>path:</strong> /content/fbngp</div>
+                    <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
+                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>replicate</div></div>
+                    <div class=result_pass><strong>Test result:</strong> PASS</div>
+                </div>
+            </details><details class="details_test" >
+                <summary class=test_pass>Cannot create/remove content inside /content/fbngp</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /content/fbngp/testcontent</div>
                     <div><strong>info:</strong> Path <strong>/content/fbngp/testcontent</strong> does not exists.</div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>create</div><div class=result_pass>remove</div></div>
+                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>create</div><div class=result_fail>remove</div></div>
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
@@ -805,12 +757,12 @@
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_pass>Has no access on /content/dam/fragment</summary>
+                <summary class=test_fail>Has no access on /content/dam/fragment</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /content/dam/fragment</div>
                     <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
+                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div></div>
+                    <div class=result_fail><strong>Test result:</strong> FAIL</div>
                 </div>
             </details><details class="details_test" >
                 <summary class=test_pass>Has no modify /content/dam/fragment</summary>
@@ -837,12 +789,12 @@
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_pass>Has no access on /content/dam/fragment/domaine</summary>
+                <summary class=test_fail>Has no access on /content/dam/fragment/domaine</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /content/dam/fragment/domaine</div>
                     <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
+                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div></div>
+                    <div class=result_fail><strong>Test result:</strong> FAIL</div>
                 </div>
             </details><details class="details_test" >
                 <summary class=test_pass>Has read access on /content/dam/fbngp</summary>
@@ -880,7 +832,7 @@
                 <summary class=test_pass>Has no access on /content/dam/bni</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /content/dam/bni</div>
-                    <div><strong>info:</strong> Path <strong>/content/dam/bni</strong> does not exists.</div>
+                    <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
                     <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div></div>
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
@@ -1238,12 +1190,12 @@
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_pass>Has no access on /content/dam/fragment</summary>
+                <summary class=test_fail>Has no access on /content/dam/fragment</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /content/dam/fragment</div>
                     <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
+                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div></div>
+                    <div class=result_fail><strong>Test result:</strong> FAIL</div>
                 </div>
             </details><details class="details_test" >
                 <summary class=test_pass>Has no modify /content/dam/fragment</summary>
@@ -1270,12 +1222,12 @@
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_pass>Has no access on /content/dam/fragment/domaine</summary>
+                <summary class=test_fail>Has no access on /content/dam/fragment/domaine</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /content/dam/fragment/domaine</div>
                     <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
+                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div></div>
+                    <div class=result_fail><strong>Test result:</strong> FAIL</div>
                 </div>
             </details><details class="details_test" >
                 <summary class=test_pass>Has read access on /content/dam/fbngp</summary>
@@ -1313,7 +1265,7 @@
                 <summary class=test_pass>Has no access on /content/dam/bni</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /content/dam/bni</div>
-                    <div><strong>info:</strong> Path <strong>/content/dam/bni</strong> does not exists.</div>
+                    <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
                     <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div></div>
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
@@ -1430,38 +1382,6 @@
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_pass>Has read on /content/dam/fbngp/pdf</summary>
-                <div class="details_info">
-                    <div><strong>path:</strong> /content/dam/fbngp/pdf</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
-                </div>
-            </details><details class="details_test" >
-                <summary class=test_pass>Has no modify on /content/dam/fbngp/pdf</summary>
-                <div class="details_info">
-                    <div><strong>path:</strong> /content/dam/fbngp/pdf</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>modify</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
-                </div>
-            </details><details class="details_test" >
-                <summary class=test_pass>Has read on /content/dam/fbngp/ban</summary>
-                <div class="details_info">
-                    <div><strong>path:</strong> /content/dam/fbngp/ban</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
-                </div>
-            </details><details class="details_test" >
-                <summary class=test_pass>Has no modify on /content/dam/fbngp/ban</summary>
-                <div class="details_info">
-                    <div><strong>path:</strong> /content/dam/fbngp/ban</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>modify</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
-                </div>
-            </details><details class="details_test" >
                 <summary class=test_pass>Has read on /content/dam/fbngp/microsites</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /content/dam/fbngp/microsites</div>
@@ -1518,22 +1438,6 @@
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_pass>Has read on microsites footer FR /content/fbngp/fr/accueil/outils-applications</summary>
-                <div class="details_info">
-                    <div><strong>path:</strong> /content/fbngp/fr/accueil/outils-applications</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
-                </div>
-            </details><details class="details_test" >
-                <summary class=test_pass>Has read on microsites footer EN /content/fbngp/en/accueil/outils-applications</summary>
-                <div class="details_info">
-                    <div><strong>path:</strong> /content/fbngp/en/accueil/outils-applications</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div></div>
-                    <div class=result_pass><strong>Test result:</strong> PASS</div>
-                </div>
-            </details><details class="details_test" >
                 <summary class=test_pass>Cannot launch Workflow (fbngp - Create CP-card from CF)</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /apps/dam/gui/content/commons/BNCStartWorkflow/items/form/items/model/items/fbngp---create-cp-card-from-cf</div>
@@ -1551,7 +1455,7 @@
                 </div>
             </details></details><div class="container-missing-paths ">
         <details>
-            <summary>Here is the list of missing paths</summary><div>/content/dam/fbngp/img-microsites-shared/testcontent</div><div>/content/dam/fragment/testcontent</div><div>/content/dam/fragment/domaine/testcontent</div><div>/content/dam/fragment/domaine/fbngp/testcontent</div><div>/content/dam/fbngp/testcontent</div><div>/content/dam/bni</div><div>/content/cq:tags/testcontent</div><div>/content/cq:tags/fbngp/testcontent</div><div>/content/fbngp/testcontent</div><div>/content/dam/fbngp/microsites/testcontent</div></details>
+            <summary>Here is the list of missing paths</summary><div>/content/dam/fbngp/img-microsites-shared/testcontent</div><div>/content/dam/fragment/testcontent</div><div>/content/dam/fragment/domaine/testcontent</div><div>/content/dam/fragment/domaine/fbngp/testcontent</div><div>/content/dam/fbngp/testcontent</div><div>/content/cq:tags/testcontent</div><div>/content/cq:tags/fbngp/testcontent</div><div>/content/fbngp/testcontent</div><div>/content/dam/fbngp/microsites/testcontent</div></details>
     </div>   </div>
 </body>
 </html>
