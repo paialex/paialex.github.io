@@ -11,11 +11,11 @@
     <div class="info">
         <h1>AEM usergroups accesses tests</h1>
         <ul class="main-info">
-            <li class="result_total">Total tests: 503</li>
-            <li class="result_pass">PASS: 457</li>
-            <li class="result_fail">FAIL: 46</li>
-            <li class="result_extime">Execution time: 246ms</li>
-            <li class="result_missing-content">Missing content paths: 52</li>
+            <li class="result_total">Total tests: 501</li>
+            <li class="result_pass">PASS: 459</li>
+            <li class="result_fail">FAIL: 42</li>
+            <li class="result_extime">Execution time: 723ms</li>
+            <li class="result_missing-content">Missing content paths: 50</li>
         </ul>
     </div>
     <div class="container"><details class="details_test-suit">
@@ -364,36 +364,20 @@
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_fail>Has read/modify/replicate access on /content/bnc</summary>
+                <summary class=test_pass>Has read/modify/replicate access on /content/headless</summary>
                 <div class="details_info">
-                    <div><strong>path:</strong> /content/bnc</div>
-                    <div><strong>info:</strong> Path <strong>/content/bnc</strong> does not exists.</div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div><div class=result_fail>modify</div><div class=result_fail>replicate</div></div>
-                    <div class=result_fail><strong>Test result:</strong> FAIL</div>
+                    <div><strong>path:</strong> /content/headless</div>
+                    <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
+                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div><div class=result_pass>modify</div><div class=result_pass>replicate</div></div>
+                    <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_fail>Can create/remove content inside /content/bnc</summary>
+                <summary class=test_pass>Can create/remove content inside /content/headless</summary>
                 <div class="details_info">
-                    <div><strong>path:</strong> /content/bnc/testcontent</div>
-                    <div><strong>info:</strong> Path <strong>/content/bnc/testcontent</strong> does not exists.</div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>create</div><div class=result_fail>remove</div></div>
-                    <div class=result_fail><strong>Test result:</strong> FAIL</div>
-                </div>
-            </details><details class="details_test" >
-                <summary class=test_fail>Has read/modify/replicate access on /content/public</summary>
-                <div class="details_info">
-                    <div><strong>path:</strong> /content/public</div>
-                    <div><strong>info:</strong> Path <strong>/content/public</strong> does not exists.</div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div><div class=result_fail>modify</div><div class=result_fail>replicate</div></div>
-                    <div class=result_fail><strong>Test result:</strong> FAIL</div>
-                </div>
-            </details><details class="details_test" >
-                <summary class=test_fail>Can create/remove content inside /content/public</summary>
-                <div class="details_info">
-                    <div><strong>path:</strong> /content/public/testcontent</div>
-                    <div><strong>info:</strong> Path <strong>/content/public/testcontent</strong> does not exists.</div>
-                    <div class=permissions><strong>permissions:</strong> <div class=result_fail>create</div><div class=result_fail>remove</div></div>
-                    <div class=result_fail><strong>Test result:</strong> FAIL</div>
+                    <div><strong>path:</strong> /content/headless/testcontent</div>
+                    <div><strong>info:</strong> Path <strong>/content/headless/testcontent</strong> does not exists.</div>
+                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>create</div><div class=result_pass>remove</div></div>
+                    <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
                 <summary class=test_pass>Has read/modify/replicate access on /content/dam/bnc</summary>
@@ -4051,7 +4035,7 @@
                 </div>
             </details></details><div class="container-missing-paths ">
         <details>
-            <summary>Here is the list of missing paths</summary><div>/conf/testcontent</div><div>/content/cq:tags/testcontent</div><div>/content/cq:tags/bnc</div><div>/content/cq:tags/bnc/testcontent</div><div>/content/bnc</div><div>/content/bnc/testcontent</div><div>/content/public</div><div>/content/public/testcontent</div><div>/content/dam/bnc/testcontent</div><div>/content/public/fr/a-propos-de-nous/investisseurs</div><div>/content/public/fr/a-propos-de-nous/investisseurs/testcontent</div><div>/content/public/en/a-propos-de-nous/investisseurs</div><div>/content/public/en/a-propos-de-nous/investisseurs/testcontent</div><div>/content/dam/a-propos-de-nous/relations-investisseurs/testcontent</div><div>/content/repmyportfolio</div><div>/content/repmyportfolio/testcontent</div><div>/content/repbnc</div><div>/content/repbnc/testcontent</div><div>/content/myportfolio</div><div>/content/myportfolio/testcontent</div><div>/content/clientbnc</div><div>/content/clientbnc/testcontent</div><div>/content/dam/orion/testcontent</div><div>/content/dam/repbnc</div><div>/content/dam/repbnc/testcontent</div><div>/content/dam/repmyportfolio</div><div>/content/dam/repmyportfolio/testcontent</div><div>/content/dam/clientbnc</div><div>/content/dam/clientbnc/testcontent</div><div>/content/dam/myportfolio</div><div>/content/dam/myportfolio/testcontent</div><div>/content/dam/bni/testcontent</div><div>/content/dam/sfmc/testcontent</div><div>/content/dam/example/testcontent</div><div>/conf/aem-sfmc/testcontent</div><div>/conf/aem-sfmc/settings/wcm/templates/sample-experience-fragment/structure</div><div>/content/dam/authenticated</div><div>/content/dam/bna</div><div>/content/dam/authenticated/bni</div><div>/content/dam/authenticated/bni/testcontent</div><div>/content/dam/authenticated/testcontent</div><div>/content/cq:tags/bni</div><div>/content/cq:tags/bni/testcontent</div><div>/content/cq:tags/bna</div><div>/content/cq:tags/bna/testcontent</div><div>/libs/cq/core/content/nav/replication</div><div>/content/cq:tags/bncd</div><div>/content/bncd</div><div>/content/dam/fbngp/testcontent</div><div>/content/dam/BNA</div><div>/content/dam/BNA/testcontent</div><div>/content/dam/bna/testcontent</div></details>
+            <summary>Here is the list of missing paths</summary><div>/conf/testcontent</div><div>/content/cq:tags/testcontent</div><div>/content/cq:tags/bnc</div><div>/content/cq:tags/bnc/testcontent</div><div>/content/headless/testcontent</div><div>/content/dam/bnc/testcontent</div><div>/content/public/fr/a-propos-de-nous/investisseurs</div><div>/content/public/fr/a-propos-de-nous/investisseurs/testcontent</div><div>/content/public/en/a-propos-de-nous/investisseurs</div><div>/content/public/en/a-propos-de-nous/investisseurs/testcontent</div><div>/content/dam/a-propos-de-nous/relations-investisseurs/testcontent</div><div>/content/repmyportfolio</div><div>/content/repmyportfolio/testcontent</div><div>/content/repbnc</div><div>/content/repbnc/testcontent</div><div>/content/myportfolio</div><div>/content/myportfolio/testcontent</div><div>/content/clientbnc</div><div>/content/clientbnc/testcontent</div><div>/content/dam/orion/testcontent</div><div>/content/dam/repbnc</div><div>/content/dam/repbnc/testcontent</div><div>/content/dam/repmyportfolio</div><div>/content/dam/repmyportfolio/testcontent</div><div>/content/dam/clientbnc</div><div>/content/dam/clientbnc/testcontent</div><div>/content/dam/myportfolio</div><div>/content/dam/myportfolio/testcontent</div><div>/content/dam/bni/testcontent</div><div>/content/dam/sfmc/testcontent</div><div>/content/dam/example/testcontent</div><div>/conf/aem-sfmc/testcontent</div><div>/conf/aem-sfmc/settings/wcm/templates/sample-experience-fragment/structure</div><div>/content/dam/authenticated</div><div>/content/dam/bna</div><div>/content/dam/authenticated/bni</div><div>/content/dam/authenticated/bni/testcontent</div><div>/content/dam/authenticated/testcontent</div><div>/content/cq:tags/bni</div><div>/content/cq:tags/bni/testcontent</div><div>/content/cq:tags/bna</div><div>/content/cq:tags/bna/testcontent</div><div>/libs/cq/core/content/nav/replication</div><div>/content/cq:tags/bncd</div><div>/content/bncd</div><div>/content/bnc</div><div>/content/dam/fbngp/testcontent</div><div>/content/dam/BNA</div><div>/content/dam/BNA/testcontent</div><div>/content/dam/bna/testcontent</div></details>
     </div>   </div>
 </body>
 </html>
