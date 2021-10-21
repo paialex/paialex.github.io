@@ -11,11 +11,11 @@
     <div class="info">
         <h1>AEM usergroups accesses tests</h1>
         <ul class="main-info">
-            <li class="result_total">Total tests: 259</li>
-            <li class="result_pass">PASS: 255</li>
-            <li class="result_fail">FAIL: 4</li>
-            <li class="result_extime">Execution time: 160ms</li>
-            <li class="result_missing-content">Missing content paths: 39</li>
+            <li class="result_total">Total tests: 262</li>
+            <li class="result_pass">PASS: 262</li>
+            <li class="result_fail">FAIL: 0</li>
+            <li class="result_extime">Execution time: 137ms</li>
+            <li class="result_missing-content">Missing content paths: 40</li>
         </ul>
     </div>
     <div class="container"><details class="details_test-suit">
@@ -164,12 +164,12 @@
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_fail>Has access to Tools Sites</summary>
+                <summary class=test_pass>Has no access to Tools Sites</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /libs/cq/core/content/nav/tools/sites</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
+                    <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
                     <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div></div>
-                    <div class=result_fail><strong>Test result:</strong> FAIL</div>
+                    <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
                 <summary class=test_pass>Has access to Tools Assets</summary>
@@ -177,6 +177,30 @@
                     <div><strong>path:</strong> /libs/cq/core/content/nav/tools/assets</div>
                     <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
                     <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div></div>
+                    <div class=result_pass><strong>Test result:</strong> PASS</div>
+                </div>
+            </details><details class="details_test" >
+                <summary class=test_pass>Has access to Tools General Templates</summary>
+                <div class="details_info">
+                    <div><strong>path:</strong> /libs/wcm/core/content/sites/templates</div>
+                    <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
+                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div></div>
+                    <div class=result_pass><strong>Test result:</strong> PASS</div>
+                </div>
+            </details><details class="details_test" >
+                <summary class=test_pass>Has read/modify/replicate on /conf</summary>
+                <div class="details_info">
+                    <div><strong>path:</strong> /conf</div>
+                    <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
+                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>read</div><div class=result_pass>modify</div><div class=result_pass>replicate</div></div>
+                    <div class=result_pass><strong>Test result:</strong> PASS</div>
+                </div>
+            </details><details class="details_test" >
+                <summary class=test_pass>Has read/modify on /conf</summary>
+                <div class="details_info">
+                    <div><strong>path:</strong> /conf/testcontent</div>
+                    <div><strong>info:</strong> Path <strong>/conf/testcontent</strong> does not exists.</div>
+                    <div class=permissions><strong>permissions:</strong> <div class=result_pass>create</div><div class=result_pass>remove</div></div>
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
@@ -572,12 +596,12 @@
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_fail>Cannot create/remove content inside content/dam/myportfolio</summary>
+                <summary class=test_pass>Cannot create/remove content inside content/dam/myportfolio</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /content/dam/myportfolio/testcontent</div>
                     <div><strong>info:</strong> Path <strong>/content/dam/myportfolio/testcontent</strong> does not exists.</div>
                     <div class=permissions><strong>permissions:</strong> <div class=result_fail>create</div><div class=result_fail>remove</div></div>
-                    <div class=result_fail><strong>Test result:</strong> FAIL</div>
+                    <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
                 <summary class=test_pass>Has read/modify/replicate access on /content/dam/bni</summary>
@@ -604,20 +628,20 @@
                     <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_fail>Has not read access on /content/dam/catalogs</summary>
+                <summary class=test_pass>Has not read access on /content/dam/catalogs</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /content/dam/catalogs</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
+                    <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
                     <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div></div>
-                    <div class=result_fail><strong>Test result:</strong> FAIL</div>
+                    <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
-                <summary class=test_fail>Has not read access on /content/dam/projects</summary>
+                <summary class=test_pass>Has not read access on /content/dam/projects</summary>
                 <div class="details_info">
                     <div><strong>path:</strong> /content/dam/projects</div>
-                    <div><strong>info:</strong> Test is expected to be <span class="result_pass">PASS</span></div>
+                    <div><strong>info:</strong> Test is expected to be <span class="result_fail">FAIL</span></div>
                     <div class=permissions><strong>permissions:</strong> <div class=result_fail>read</div></div>
-                    <div class=result_fail><strong>Test result:</strong> FAIL</div>
+                    <div class=result_pass><strong>Test result:</strong> PASS</div>
                 </div>
             </details><details class="details_test" >
                 <summary class=test_pass>Has no read/modify/replicate access on /content/dam/pcis</summary>
@@ -2095,7 +2119,7 @@
                 </div>
             </details></details><div class="container-missing-paths ">
         <details>
-            <summary>Here is the list of missing paths</summary><div>/content/cq:tags/testcontent</div><div>/content/cq:tags/bnc/testcontent</div><div>/content/bnc/testcontent</div><div>/content/public/testcontent</div><div>/content/dam/bnc/testcontent</div><div>/content/public/fr/a-propos-de-nous/investisseurs/testcontent</div><div>/content/public/en/a-propos-de-nous/investisseurs/testcontent</div><div>/content/dam/a-propos-de-nous/relations-investisseurs/testcontent</div><div>/content/repmyportfolio/testcontent</div><div>/content/repbnc/testcontent</div><div>/content/myportfolio/testcontent</div><div>/content/clientbnc/testcontent</div><div>/content/dam/orion/testcontent</div><div>/content/dam/repbnc</div><div>/content/dam/repbnc/testcontent</div><div>/content/dam/repmyportfolio</div><div>/content/dam/repmyportfolio/testcontent</div><div>/content/dam/clientbnc/testcontent</div><div>/content/dam/myportfolio/testcontent</div><div>/content/dam/bni/testcontent</div><div>/content/bncd/testcontent</div><div>/content/bna/testcontent</div><div>/content/bni/testcontent</div><div>/content/sbc/testcontent</div><div>/content/campaigns/testcontent</div><div>/content/dam/master-dam/testcontent</div><div>/content/dam/bna</div><div>/content/dam/bncd/testcontent</div><div>/content/dam/pcis/testcontent</div><div>/content/experience-fragments/bncd/testcontent</div><div>/content/experience-fragments/sbc/testcontent</div><div>/content/experience-fragments/example/testcontent</div><div>/content/dam/fbngp/img-microsites-shared/testcontent</div><div>/content/dam/fragment/testcontent</div><div>/content/dam/fragment/domaine/testcontent</div><div>/content/dam/fragment/domaine/fbngp/testcontent</div><div>/content/dam/fbngp/testcontent</div><div>/content/cq:tags/fbngp/testcontent</div><div>/content/fbngp/testcontent</div></details>
+            <summary>Here is the list of missing paths</summary><div>/conf/testcontent</div><div>/content/cq:tags/testcontent</div><div>/content/cq:tags/bnc/testcontent</div><div>/content/bnc/testcontent</div><div>/content/public/testcontent</div><div>/content/dam/bnc/testcontent</div><div>/content/public/fr/a-propos-de-nous/investisseurs/testcontent</div><div>/content/public/en/a-propos-de-nous/investisseurs/testcontent</div><div>/content/dam/a-propos-de-nous/relations-investisseurs/testcontent</div><div>/content/repmyportfolio/testcontent</div><div>/content/repbnc/testcontent</div><div>/content/myportfolio/testcontent</div><div>/content/clientbnc/testcontent</div><div>/content/dam/orion/testcontent</div><div>/content/dam/repbnc</div><div>/content/dam/repbnc/testcontent</div><div>/content/dam/repmyportfolio</div><div>/content/dam/repmyportfolio/testcontent</div><div>/content/dam/clientbnc/testcontent</div><div>/content/dam/myportfolio/testcontent</div><div>/content/dam/bni/testcontent</div><div>/content/bncd/testcontent</div><div>/content/bna/testcontent</div><div>/content/bni/testcontent</div><div>/content/sbc/testcontent</div><div>/content/campaigns/testcontent</div><div>/content/dam/master-dam/testcontent</div><div>/content/dam/bna</div><div>/content/dam/bncd/testcontent</div><div>/content/dam/pcis/testcontent</div><div>/content/experience-fragments/bncd/testcontent</div><div>/content/experience-fragments/sbc/testcontent</div><div>/content/experience-fragments/example/testcontent</div><div>/content/dam/fbngp/img-microsites-shared/testcontent</div><div>/content/dam/fragment/testcontent</div><div>/content/dam/fragment/domaine/testcontent</div><div>/content/dam/fragment/domaine/fbngp/testcontent</div><div>/content/dam/fbngp/testcontent</div><div>/content/cq:tags/fbngp/testcontent</div><div>/content/fbngp/testcontent</div></details>
     </div>   </div>
 </body>
 </html>
