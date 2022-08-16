@@ -9,6 +9,15 @@ body {
 }
 
 .card-section {
-    border: 1px solid black;
-    background-color: cornflowerblue;
+
+    font-family: sans-serif;
+  padding: 1rem;
+  width: 16rem;
+  height: 10rem;
+  float: left;
+  margin: 1.5rem;
+  background: cornflowerblue;;
+  box-shadow: 0 0 6px 2px rgba(0,0,0,.1);
+  transition: all .2s ease;
+  border-bottom: 2px solid transparent;
 }
